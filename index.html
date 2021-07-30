@@ -7,25 +7,69 @@
     <link rel="stylesheet" href="style.css" />
     <title>Landing On LandMarks</title>
   </head>
+
+
   <body>
     <header>
       <h1>Landing on Landmarks</h1>
       <h3>game rules</h3>
       <div class="gameRules">
-      <h6>Match 2 images behind each block to score.  Begin by clicking on any block to start.  Game could be reset at anytime!</h6>
+      <h6>Match 2 images behind each button to score.  Begin by clicking on any button to start.  Game could be reset at anytime!</h6>
     </div>
       <button class="resetButton">Game Reset</button>
     </header>
+
+
     <div class="mainBody">
       <main class="flashCard">
-        <div class="topRow">
+
+        <!-- first modal here -->
+          
+          <button class="modal-buttons" id="openModal">Card #1</button>
+          
+          <div class="modal">
+            <div id="modal-textbox">
           <img class="card1" src="golden.jpg" alt="image behind card1">
-          <img class="card2" src="mountrushmore.jpg" alt="image behind card2">
-          <img class="card3" src="golden.jpg" alt="image behind card3">
-          <img class="card4" src="mountrushmore.jpg" alt="image behind card4">
-        </div>
+          
+          <div id="modal-footer">
+            <button class="modal-buttons" id="close" href="#">Close</button>
+            </div>
+          </div>
+            </div>
+          </div>
+
+       <!-- 2nd modal here 
+       
+          <button class="modal-buttons" id="openModal2">Card #2</button>
+          <div class="modal1">
+              <img class="card2" src="mountrushmore.jpg" alt="image behind card2">
+          <div id="modal-footer">
+            <button class="modal-buttons" id="close" href="#">Close</button>
+            </div>
+          </div> -->
+          
+          <!-- 3rd modal here 
+          <div class="modal">
+          <button class="modal-buttons" id="openModal3">Card #3</button>
+          <img class="card1" src="golden.jpg" alt="image behind card1">
+          <div id="modal-footer">
+            <button class="modal-buttons" id="close" href="#">Close</button>
+            </div>
+          </div>
+
+          4th modal here 
+          <div class="modal">
+          <button class="modal-buttons" id="openModal4">Card #4</button>
+              <img class="card2" src="mountrushmore.jpg" alt="image behind card2">
+          <div id="modal-footer">
+            <button class="modal-buttons" id="close" href="#">Close</button>
+            </div>
+          </div> -->
+        
 
       </main>
+
+
       <aside class="scoreBoard">
         <h3>player 1:</h3>
         <div class="score">"score 0"</div>
@@ -35,9 +79,9 @@
 
       </aside>
     </div>
-    <footer>
+    <!-- <footer>
       <h6 class="copyright">&copy; My first Webpage.</h6>
-    </footer>
+    </footer> -->
 
     <script src="app.js"></script>
   </body>

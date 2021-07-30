@@ -1,10 +1,9 @@
-body {
+/* body {
     margin: auto;
     font-family: sans-serif;
-    display: flex;
     flex-direction: column;
    
-  }
+  } */
 
 header {
   width: 100%;
@@ -19,34 +18,74 @@ header {
   display: flex;
   justify-content: space-around;
   flex-flow: wrap;
+  height: 100vh;
 }
 
-.img {
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    width: 50px;
+ aside {
+     background: green;
+  color: #ffffff;
+  margin: .5px;
+  text-align: center;
+  padding: .5rem;
+}  
 
-    /* max-height: 25px;
-    max-width: 25px;
+#modal {
+	background-color: rgba(0,0,0,0.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	/*This puts our modal in front of the body (which has a default z-index setting of `0`*/
+	overflow: auto;
+	/*If overflow is clipped, a scroll-bar should be added to see the rest of the content*/
+	display: none;
+}
+
+.modal-textbox {
+	background-color: white;
+	height: 250px;
+	width: 250px;
+	border-radius: 2px;
+	margin: 150px auto;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+	padding: 2%;
+	line-height: 120%;
+	
+}
+
+#modal-footer {
+	text-align: right;
+
+}
+
+
+.modal-buttons {
+	padding: 14px 18px;
+	background-color: #677996;
+	border: none;
+	outline: none;
+	border-radius: 3px;
+	color: white;
+	font-family: 'Arial';
+	cursor: pointer;
+
+}
+
+img {
+    max-height: 200px;
+    max-width: 200px;
     margin: 5px;
-    padding: 5px; */
+    padding: 5px;
+    align-content: center;
 }
 
-img:hover {
+button:hover {
     box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
   }
 
-aside {
-  /* flex-basis: 25rem; */
-  background: green;
-  color: #ffffff;
-  margin: 5px;
-  text-align: center;
-  padding: 1rem;
-}
-
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   main {
     flex-direction: column;
   }
@@ -54,4 +93,4 @@ aside {
   section {
     order: 1;
   }
-}
+} */
