@@ -44,3 +44,31 @@ openBtn2.addEventListener("click", openModal2 = () => {
 close2.addEventListener("click", closeModal2 = () => {
     modal2.style.display = "none";
 })
+
+const openBtn3 = document.querySelector("#openModal3");
+const modal3 = document.querySelector("#modal3");
+const close3 = document.querySelector("#close3");
+
+
+
+openBtn3.addEventListener("click", openModal3 = () => {
+    modal3.style.display = "block";
+})
+
+close3.addEventListener("click", closeModal3 = () => {
+    modal3.style.display = "none";
+})
+
+const openBtn4 = document.querySelector("#openModal4");
+const modal4 = document.querySelector("#modal4");
+const close4 = document.querySelector("#close4");
+
+
+
+openBtn4.addEventListener("click", openModal4 = () => {
+    modal4.style.display = "block";
+})
+
+close4.addEventListener("click", closeModal4 = () => {
+    modal4.style.display = "none";
+})
