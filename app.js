@@ -55,6 +55,9 @@ close4.addEventListener("click", closeModal4 = () => {
     modal4.style.display = "none";
 })
 
+
+// working in J.
+
 console.log(openBtn1.value, openBtn2.value, openBtn3.value, openBtn4.value)
 
 let player1score = 0
@@ -65,6 +68,21 @@ const p2score = document.getElementById("p2")
 
 p2score.innerHTML = player2score
 p1score.innerHTML = player1score
+
+
+
+function compareCards() {
+    if (card1.value == card2.value)
+    score++
+
+else {score--}
+}
+
+
+
+
+
+
 
 
 // //setTimeout(openModal, 2000)  - this will pop out the modal without click
