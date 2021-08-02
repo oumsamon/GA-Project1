@@ -16,7 +16,10 @@
       <div class="gameRules">
       <h6>Match 2 images behind each button to score.  Begin by clicking on any button to start.  Game could be reset at anytime!</h6>
     </div>
+<form>
       <button class="resetButton">Game Reset</button>
+    </form>
+    <!-- using a the form function as a score/page reset.  relocation.reload function does an infinite loop. -->
     </header>
 
 
@@ -25,7 +28,7 @@
 
         <!-- first modal here -->
           
-          <button class="modal-buttons" id="openModal1">Card #1</button>
+          <button class="modal-buttons" id="openModal1" value="goldGateBridge">Card #1</button>
           <div class="modal" id="modal1">
             <div class="modal-box" id="modal-box1">
           <img class="img" id="card1" src="golden.jpg" alt="image behind card1">
@@ -38,7 +41,7 @@
 
        <!-- 2nd modal here  -->
        
-           <button class="modal-buttons" id="openModal2">Card #2</button>
+           <button class="modal-buttons" id="openModal2" value="mountrushmore">Card #2</button>
           <div class="modal" id="modal2">
             <div class="modal-box" id="modal-box2">
               <img class="img" id="card2" src="mountrushmore.jpg" alt="image behind card2">
@@ -49,7 +52,7 @@
           </div>
           
           <!-- 3rd modal here--> 
-            <button class="modal-buttons" id="openModal3">Card #3</button>
+            <button class="modal-buttons" id="openModal3" value="goldGateBridge">Card #3</button>
           <div class="modal" id="modal3">
             <div class="modal-box" id="modal-box3">
           <img class="img" id="card3" src="golden.jpg" alt="image behind card3">
@@ -60,7 +63,7 @@
             </div>
 
           <!-- 4th modal here  -->
-           <button class="modal-buttons" id="openModal4">Card #4</button>
+           <button class="modal-buttons" id="openModal4" value="mountrushmore" >Card #4</button>
           <div class="modal" id="modal4">
             <div class="modal-box" id="modal-box4">
               <img class="img" id="card4" src="mountrushmore.jpg" alt="image behind card4">
@@ -76,9 +79,9 @@
 
       <aside class="scoreBoard">
         <h3>player 1:</h3>
-        <div class="score">"score 0"</div>
+        <div class="score" id="p1"></div>
         <h3>player 2:</h3>
-        <div class="score">"score 0</div>
+        <div class="score" id="p2"></div>
 
 
       </aside>

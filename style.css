@@ -34,11 +34,11 @@ header {
 	position: fixed;
 	top: 0;
 	left: 0;
-	height: 25%;
-	width: 15%;
+	height: 50%;
+	width: 30%;
 	z-index: 1;
 	/*This puts our modal in front of the body (which has a default z-index setting of `0`*/
-	overflow: auto;
+	/* overflow: auto; */
 	/*If overflow is clipped, a scroll-bar should be added to see the rest of the content*/
 	display: none;
 }
