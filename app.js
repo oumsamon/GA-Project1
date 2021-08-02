@@ -2,31 +2,45 @@ console.log("working")
 
 //coding a pop up.
 //grab the game button
-const openBtn = document.querySelector(".modal-buttons");
+const openBtn1 = document.querySelector("#openModal1");
 
 //grabbing the modal
-const modal = document.querySelector(".modal");
-const modal1 = document.querySelector(".modal1");
+const modal1 = document.querySelector("#modal1");
+
 
 //grabbig the close button
-const close = document.getElementById("close");
+const close1 = document.getElementById("close1");
 
 
 //Function to change modal display to block
 const openModal = () => {
-    modal.style.display = "block";
+    modal1.style.display = "block";
 }
-console.log("modal working?")
+
 
 const closeModal = () => {
-    modal.style.display = "none"
+    modal1.style.display = "none"
 }
 
 //adding event listener
-openBtn.addEventListener("click", openModal)
+openBtn1.addEventListener("click", openModal)
 
 //adding event listener
-close.addEventListener("click", closeModal)
+close1.addEventListener("click", closeModal)
 
 //setTimeout(openModal, 2000)  - this will pop out the modal without click
 //setTimeout(closeModal, 10000) - this will remove the display modal.
+
+const openBtn2 = document.querySelector("#openModal2");
+const modal2 = document.querySelector("#modal2");
+const close2 = document.querySelector("#close2");
+
+
+
+openBtn2.addEventListener("click", openModal2 = () => {
+    modal2.style.display = "block";
+})
+
+close2.addEventListener("click", closeModal2 = () => {
+    modal2.style.display = "none";
+})
