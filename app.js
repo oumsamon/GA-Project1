@@ -60,7 +60,7 @@ close4.addEventListener("click", closeModal4 = () => {
 
 // working in J.
 
-console.log(openBtn1.value, openBtn2.value, openBtn3.value, openBtn4.value)
+console.log(card1, card2, card3, card4)
 
 let player1score = 0
 let player2score = 0
@@ -83,7 +83,7 @@ function compareCards() {
 else {score--}
 }
 
-
+//compareCards()
 
 
 
