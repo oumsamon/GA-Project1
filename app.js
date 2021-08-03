@@ -7,7 +7,6 @@ const close1 = document.getElementById("close1");
 const openModal = () => {
     modal1.style.display = "block";
     let card1 = document.querySelector(".img").src
-    console.log(card1)
 }
 
 const closeModal = () => {
@@ -25,7 +24,6 @@ const close2 = document.querySelector("#close2");
 openBtn2.addEventListener("click", openModal2 = () => {
     modal2.style.display = "block";
     let card2 = document.querySelector("#card2").src
-    console.log(card2)
 })
 
 close2.addEventListener("click", closeModal2 = () => {
@@ -39,6 +37,7 @@ const close3 = document.querySelector("#close3");
 
 openBtn3.addEventListener("click", openModal3 = () => {
     modal3.style.display = "block";
+    let card3 = document.querySelector("#card3").src
 })
 
 close3.addEventListener("click", closeModal3 = () => {
@@ -49,10 +48,9 @@ const openBtn4 = document.querySelector("#openModal4");
 const modal4 = document.querySelector("#modal4");
 const close4 = document.querySelector("#close4");
 
-
-
 openBtn4.addEventListener("click", openModal4 = () => {
     modal4.style.display = "block";
+    let card4 = document.querySelector("#card4").src
 })
 
 close4.addEventListener("click", closeModal4 = () => {
@@ -74,12 +72,12 @@ p2score.innerHTML = player2score
 p1score.innerHTML = player1score
 
 
-
+console.log(player1score)
 function compareCards() {
     if (card1 == card3) {
         //console.log before and after in the terminal.
         player1score.innerHTML(parseInt(player1score.innerHTML) + 10)
-        score++
+        console.log(player1score)
     }
 
 else {score--}
