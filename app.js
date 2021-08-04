@@ -138,7 +138,7 @@ function compareCards() {
             console.log("what is this", btn)
         });
     } else {
-        player1score = player1score - 10
+        player1score = player1score - 5
         console.log("player1score inside", player1score)
         p1score.innerHTML = player1score  
     }
