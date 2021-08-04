@@ -42,27 +42,22 @@ p1score.innerHTML = player1score
 
 openBtn1.addEventListener("click", openModal1 = () => {
     modal1.style.display = "block";
+    //added this in order to disable the button 
     openBtn1.classList.add("selected")
     if(turn == 0) {
-        //i added value to correctly match each other for the function.
+        //compare the value to correctly match for the function.
         choice1 = openBtn1.value
-        console.log(turn)
-    console.log(choice1)
-    turn = 1
-    openBtn1.disabled = true
+        turn = 1
     } else {
         choice2 = openBtn1.value
         compareCards()
-        console.log(turn)
-        console.log(choice2)
         turn = 0
     }
-    setTimeout(closeModal, 3000)
+    setTimeout(closeModal, 2000)
 })
 
 close1.addEventListener("click", closeModal = () => {
     modal1.style.display = "none"
-    
 })
  
 openBtn2.addEventListener("click", openModal2 = () => {
@@ -70,19 +65,13 @@ openBtn2.addEventListener("click", openModal2 = () => {
     openBtn2.classList.add("selected")
     if(turn == 0) {
         choice1 = openBtn2.value
-        
-       
-        console.log(turn)
-    console.log(choice1)
-    turn = 1
+        turn = 1
     } else {
         choice2 = openBtn2.value
         compareCards()
-        console.log(turn)
-        console.log(choice2)
         turn = 0
     }
-    setTimeout(closeModal2, 3000) 
+    setTimeout(closeModal2, 2000) 
 })
 
 close2.addEventListener("click", closeModal2 = () => {
@@ -94,18 +83,13 @@ openBtn3.addEventListener("click", openModal3 = () => {
     openBtn3.classList.add("selected")
     if(turn == 0) {
         choice1 = openBtn3.value
-       
-        console.log(turn)
-    console.log(choice1)
-    turn = 1
+        turn = 1
     } else {
         choice2 = openBtn3.value
         compareCards()
-        console.log(turn)
-        console.log(choice2)
         turn = 0
     }
-    setTimeout(closeModal3, 3000)
+    setTimeout(closeModal3, 2000)
 })
 
 close3.addEventListener("click", closeModal3 = () => {
@@ -117,13 +101,13 @@ openBtn4.addEventListener("click", openModal4 = () => {
     openBtn4.classList.add("selected")
     if(turn == 0) {
         choice1 = openBtn4.value
-    turn = 1
+        turn = 1
     } else {
         choice2 = openBtn4.value
         compareCards()
         turn = 0
     }
-    setTimeout(closeModal4, 3000)
+    setTimeout(closeModal4, 2000)
 })
 
 close4.addEventListener("click", closeModal4 = () => {
@@ -135,13 +119,13 @@ openBtn5.addEventListener("click", openModal5 = () => {
     openBtn5.classList.add("selected")
     if(turn == 0) {
         choice1 = openBtn5.value
-    turn = 1
+        turn = 1
     } else {
         choice2 = openBtn5.value
         compareCards()
         turn = 0
     }
-    setTimeout(closeModal, 3000)
+    setTimeout(closeModal, 2000)
 })
 
 close5.addEventListener("click", closeModal5 = () => {
@@ -153,13 +137,13 @@ openBtn6.addEventListener("click", openModal6 = () => {
     openBtn6.classList.add("selected")
     if(turn == 0) {
         choice1 = openBtn6.value
-    turn = 1
+        turn = 1
     } else {
         choice2 = openBtn6.value
         compareCards()
         turn = 0
     }
-    setTimeout(closeModal6, 000)
+    setTimeout(closeModal6, 2000)
 })
 
 close6.addEventListener("click", closeModal6 = () => {
@@ -171,13 +155,13 @@ openBtn7.addEventListener("click", openModal7 = () => {
     openBtn7.classList.add("selected")
     if(turn == 0) {
         choice1 = openBtn7.value
-    turn = 1
+        turn = 1
     } else {
         choice2 = openBtn7.value
         compareCards()
         turn = 0
     }
-    setTimeout(closeModal7, 3000)
+    setTimeout(closeModal7, 2000)
 })
 
 close7.addEventListener("click", closeModal7 = () => {
@@ -189,13 +173,13 @@ openBtn8.addEventListener("click", openModal8 = () => {
     openBtn8.classList.add("selected")
     if(turn == 0) {
         choice1 = openBtn8.value
-    turn = 1
+        turn = 1
     } else {
         choice2 = openBtn8.value
         compareCards()
         turn = 0
     }
-    setTimeout(closeModal8, 3000)
+    setTimeout(closeModal8, 2000)
 })
 
 close8.addEventListener("click", closeModal8 = () => {
@@ -207,13 +191,13 @@ openBtn9.addEventListener("click", openModal9 = () => {
     openBtn9.classList.add("selected")
     if(turn == 0) {
         choice1 = openBtn9.value
-    turn = 1
+        turn = 1
     } else {
         choice2 = openBtn9.value
         compareCards()
         turn = 0
     }
-    setTimeout(closeModal9, 000)
+    setTimeout(closeModal9, 2000)
 })
 
 close9.addEventListener("click", closeModal9 = () => {
@@ -225,13 +209,13 @@ openBtn10.addEventListener("click", openModal10 = () => {
     openBtn10.classList.add("selected")
     if(turn == 0) {
         choice1 = openBtn10.value
-    turn = 1
+        turn = 1
     } else {
         choice2 = openBtn10.value
         compareCards()
         turn = 0
     }
-    setTimeout(closeModal10, 3000)
+    setTimeout(closeModal10, 2000)
 })
 
 close10.addEventListener("click", closeModal10 = () => {
@@ -239,48 +223,35 @@ close10.addEventListener("click", closeModal10 = () => {
 })
  
 
-
-
-
-
-
-
-
-
-
-
-
-
 function compareCards() {
-    console.log("compare card working?")
     if (choice1 == choice2) {
         //update player score to increment by 10
         player1score = player1score+ 10
-        console.log("player1score inside", player1score)
         //display the updated player score on the DOM.
         p1score.innerHTML = player1score
-        //im selecting all of the button that have selected from DOM
-        console.log("look here for selected buttons", document.querySelectorAll(".selected"))
-        //i a grabbing the button that have selected class inside them
+        //selecting all of the button that have selected from DOM
         const selectedButtons = document.querySelectorAll('.selected');
         selectedButtons.forEach(btn => {
-            //i created a var btn to represent Each of the btn that selected. then make it red.
+            //created a var btn to represent Each of the btn that selected to applied the function below.
             btn.style.backgroundColor = "green"
             btn.disabled = true
-
-            console.log("what is this", btn)
         });
         window.alert("You are correct!");
     } else {
         player1score = player1score - 5
-        console.log("player1score inside", player1score)
         p1score.innerHTML = player1score
         window.alert("Please try again!");  
     }
-
-//to remove the selected class    
+//to remove the "selected" in the class to prevent buttons disabled from previous click
 openBtn1.classList.remove("selected");
 openBtn2.classList.remove("selected");
 openBtn3.classList.remove("selected");
 openBtn4.classList.remove("selected");
+openBtn5.classList.remove("selected");
+openBtn6.classList.remove("selected");
+openBtn7.classList.remove("selected");
+openBtn8.classList.remove("selected");
+openBtn9.classList.remove("selected");
+openBtn10.classList.remove("selected");
+
 }
