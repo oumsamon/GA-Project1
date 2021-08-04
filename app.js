@@ -27,7 +27,6 @@ openBtn1.addEventListener("click", openModal1 = () => {
     if(turn == 0) {
         //i added value to correctly match each other for the function.
         choice1 = openBtn1.value
-      
         console.log(turn)
     console.log(choice1)
     turn = 1
@@ -137,10 +136,12 @@ function compareCards() {
 
             console.log("what is this", btn)
         });
+        window.alert("You are correct!");
     } else {
         player1score = player1score - 5
         console.log("player1score inside", player1score)
-        p1score.innerHTML = player1score  
+        p1score.innerHTML = player1score
+        window.alert("Please try again!");  
     }
 
 //to remove the selected class    
