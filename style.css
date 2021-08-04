@@ -18,7 +18,7 @@ header {
   display: flex;
   justify-content: space-around;
   flex-flow: wrap;
-  height: 100vh;
+  height: 45vh;
 }
 
  aside {
