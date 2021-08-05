@@ -53,7 +53,7 @@ openBtn1.addEventListener("click", openModal1 = () => {
         compareCards()
         turn = 0
     }
-    setTimeout(closeModal, 2000)
+    // setTimeout(closeModal, 2000)
 })
 
 close1.addEventListener("click", closeModal = () => {
