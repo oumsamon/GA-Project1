@@ -1,5 +1,3 @@
-
-
 const openBtn1 = document.querySelector("#openModal1");
 const modal1 = document.querySelector("#modal1");
 const close1 = document.getElementById("close1");
